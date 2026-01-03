@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+</head>
+
+<body class="bg-gray-700 text-amber-50 overflow-x-hidden">
+
+
+
+    <nav class="sticky top-0 z-50">
+        <div class="bg-amber-50 w-full">
+            <ul class="flex justify-between items-center px-9 py-2">
+
+                <li class=" w-16 transition-transform duration-300 hover:scale-110"><img src="logo.png"
+                        class="object-contain"></li>
+                <li>
+                    <ul class="flex gap-[3vw] items-center px-4 py-2 text-gray-800">
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="index.html">Home</a></li>
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="foundItems.html">Found
+                                Items</a></li>
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="lostitems.html">Lost
+                                Items</a></li>
+                        <li>
+                            <select
+                                class="text-gray-800 hidden md:block transform transition-transform duration-300 hover:scale-110  outline-none hover:text-amber-950 reportDropdown">
+                                <option value="">Report Items</option>
+                                <option value="lost.html">Lost Item</option>
+                                <option value="found.html">Found Item</option>
+                            </select>
+                        </li>
+                        <li
+                            class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white">
+                            <a href="login.html">Log in</a></li>
+                        <li
+                            class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white">
+                            <a href="admin.html">Admin Login</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="relative h-screen overflow-hidden">
+
+
+        <img src="https://images.unsplash.com/photo-1653189909513-fc0516e4d27a?q=80&w=870&auto=format&fit=crop"
+            class="absolute  w-full h-full object-cover -z-10">
+
+
+        <div class="absolute inset-0 bg-black/40"></div>
+
+        <div class="relative z-10 flex flex-col items-center justify-center h-full text-white text-center px-4">
+
+            <h1 class="inline-block text-[6vw] md:text-5xl font-extrabold">Lost Something? Find it here<i
+                    class="fa-solid fa-magnifying-glass"></i></h1>
+
+            <p class="mt-3 text-sm md:text-lg font-bold">A simple system to report and recover lost items on campus.</p>
+
+            <div class="mt-5">
+                <button onclick="window.location.href='lost.html'"
+                    class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-lg transition hover:scale-110">Report
+                    Lost Item</button>
+
+                <button onclick="window.location.href='found.html'"
+                    class="bg-sky-500 hover:bg-sky-600 text-white font-semibold py-2 px-4 rounded-lg ml-4 transition hover:scale-110">Report
+                    Found Item</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container mx-auto my-20 md:my-32 px-4">
+
+        <p class="text-center font-bold text-2xl md:text-3xl mb-12">Simple steps to recover your lost item</p>
+
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8">
+
+            <div
+                class="flex-1 flex flex-col bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center gap-2 text-3xl text-orange-500 mb-4">
+                    <i class="fa-solid fa-file-signature"></i>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                </div>
+
+                <div class="text-gray-700 mb-4">
+                    <p class="font-bold mb-2">What to include:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Detailed description</li>
+                        <li>Last location & time</li>
+                        <li>Photo (if available)</li>
+                        <li>Contact information</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black text-white font-bold text-center py-2 mt-auto rounded-lg"> 1. Report</div>
+            </div>
+
+
+            <div
+                class="flex-1 flex flex-col bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center gap-2 text-3xl text-sky-500 mb-4"><i
+                        class="fa-solid fa-magnifying-glass"></i><i class="fa-solid fa-square-check"></i>
+                </div>
+
+                <div class="text-gray-700 mb-4">
+                    <p class="font-bold mb-2">Auto-scan & compares:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Location proximity</li>
+                        <li>Time frames</li>
+                        <li>Descriptions</li>
+                        <li>Photos & categories</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black text-white font-bold text-center py-2 mt-auto rounded-lg">2. Matching
+                </div>
+            </div>
+
+
+            <div
+                class="flex-1 flex flex-col bg-white rounded-xl shadow-md p-6 transition-transform duration-300 hover:scale-105">
+                <div class="flex justify-center gap-2 text-3xl text-green-500 mb-4">
+                    <i class="fa-solid fa-trophy"></i>
+                    <i class="fa-solid fa-award"></i>
+                </div>
+
+                <div class="text-gray-700 mb-4">
+                    <p class="font-bold mb-2">Item return process:</p>
+                    <ul class="list-disc pl-5">
+                        <li>Verify ownership</li>
+                        <li>Campus pickup</li>
+                        <li>Item returned</li>
+                    </ul>
+                </div>
+
+                <div class="bg-black text-white font-bold text-center py-2 mt-auto rounded-lg">3. Reunite Safely</div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row bg-gray-50 justify-center w-full py-5 md:py-16 text-gray-900 gap-4 md:gap-20">
+
+        <div class="flex flex-col items-center justify-center">
+            <div class="font-bold text-4xl">92%</div>
+            <div class="text-gray-400">Recovery Rate</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+            <div class="font-bold text-4xl">24h</div>
+            <div class="text-gray-400">Avg. Match Time</div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center">
+            <div class="font-bold text-4xl">500+</div>
+            <div class="text-gray-400">Items Reunited</div>
+        </div>
+
+    </div>
+
+
+    <footer class="bg-gray-800 text-white py-12 mt-28">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <h3 class="text-xl font-semibold mb-4">Campus Lost & Found</h3>
+            <p class="text-gray-300 mb-6">📍 Campus Security Office • 📞 (555) 123-4567</p>
+            <p class="text-gray-400 text-sm">© 2024 University of Engineering & Technology • Privacy Policy</p>
+        </div>
+    </footer>
+
+    <script src="dropdown.js"></script>
+    </div>
+</body>
+
+</html>

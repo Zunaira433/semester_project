@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost & Found</title>
+
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+          integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer" />
+           
+</head>
+
+<body class="bg-gray-700 text-amber-50 overflow-x-hidden">
+
+
+
+<nav class="sticky top-0 z-50">
+    <div class="bg-amber-50 w-full">
+        <ul class="flex justify-between items-center px-9 py-2">
+
+            <li class=" w-16 transition-transform duration-300 hover:scale-110">
+                <img src="logo.png" class="object-contain">
+            </li>
+
+            <li>
+                <ul class="flex gap-[3vw] items-center px-7 py-2 text-gray-800">
+                    <li class="hover:scale-110 transition hover:text-amber-950"><a href="index.html">Home</a></li>
+                    <li class="hover:scale-110 transition hover:text-amber-950"><a href="foundItems.html">Found Items</a></li>
+                    <li class="hover:scale-110 transition hover:text-amber-950"><a href="lostitems.html">Lost Items</a></li>
+                    <li>
+  <select  
+          class="reportDropdown text-gray-800 hidden md:block transform transition-transform duration-300 hover:scale-110  outline-none hover:text-amber-950">
+    <option value="" >Report Items</option>
+    <option value="lost.html">Lost Item</option>
+    <option value="found.html">Found Item</option>
+  </select>
+</li>
+                    <li class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white"><a href="login.html">Log in</a></li>
+                    <li class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white"><a href="admin.html">Admin Login</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+<h1 class="text-3xl font-bold text-shadow-white mt-6 mb-2 text-center">
+  Found Items Record
+</h1>
+<p class="text-white mb-6 text-center">
+  A list of items that have been found and submitted by students.
+</p>
+
+<div class="mb-8  text-black text-center">
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Search by item name, location, or category..."
+    class="w-full md:w-1/2 p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-900 bg-white"
+  />
+</div>
+
+
+
+<div id="foundItemsContainer" class="flex flex-wrap justify-center gap-6 mt-6">
+  
+</div>
+
+ <footer class="bg-gray-800 text-white py-12 mt-28">
+  <div class="max-w-6xl mx-auto px-4 text-center">
+    <h3 class="text-xl font-semibold mb-4">Campus Lost & Found</h3>
+    <p class="text-gray-300 mb-6">📍 Campus Security Office • 📞 (555) 123-4567</p>
+    <p class="text-gray-400 text-sm">© 2024 University of Engineering & Technology • Privacy Policy</p>
+  </div>
+</footer>
+
+
+<script src="found.js"></script>
+<script src="dropdown.js"></script>
+</body>
+</html>

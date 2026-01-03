@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-gray-800">
+    <nav class="sticky top-0 z-50">
+        <div class="bg-amber-50 w-full">
+            <ul class="flex justify-between items-center px-9 py-2">
+
+                <li class=" w-16 transition-transform duration-300 hover:scale-110"><img src="logo.png"
+                        class="object-contain">
+                </li>
+
+                <li>
+                    <ul class="flex gap-[5vw] items-center px-7 py-2 text-gray-800">
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="index.html">Home</a></li>
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="foundItems.html">Found
+                                Items</a></li>
+                        <li class="hover:scale-110 transition hover:text-amber-950"><a href="lostitems.html">Lost
+                                Items</a></li>
+                        <li>
+                            <select
+                                class="reportDropdown text-gray-800 hidden md:block transform transition-transform duration-300 hover:scale-110  outline-none hover:text-amber-950">
+                                <option value="">Report Items</option>
+                                <option value="lost.html">Lost Item</option>
+                                <option value="found.html">Found Item</option>
+                            </select>
+                        </li>
+                        <li
+                            class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white">
+                            <a href="login.html">Log in</a></li>
+                        <li class="hidden md:block hover:scale-110 transition bg-amber-950 rounded-lg py-1 px-4 text-white"
+                            id="logout"><a href="#">Log out</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+        <div class="bg-white p-8 rounded shadow-md w-full max-w-sm">
+            <h2 class="text-2xl font-bold mb-6 text-center">Admin Login</h2>
+            <input type="text" id="username" placeholder="Username" class="w-full mb-4 p-2 border rounded">
+            <input type="password" id="password" placeholder="Password" class="w-full mb-4 p-2 border rounded">
+            <button id="login_button" class="w-full bg-blue-500 text-white p-2 rounded hover:bg-blue-600">Login</button>
+            <p id="loginMsg" class="text-red-500 mt-2 text-center"></p>
+        </div>
+    </div>
+
+
+    <script src="login.js"></script>
+</body>
+
+</html>
